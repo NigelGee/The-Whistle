@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BB599932452170E007C4B72 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB599922452170E007C4B72 /* ResultsView.swift */; };
+		8BBD9A822450C76C00C550EA /* ResizableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD9A812450C76C00C550EA /* ResizableTextField.swift */; };
 		8BC1DAAB244C4FAC007D3550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAAA244C4FAC007D3550 /* AppDelegate.swift */; };
 		8BC1DAAD244C4FAC007D3550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAAC244C4FAC007D3550 /* SceneDelegate.swift */; };
 		8BC1DAAF244C4FAC007D3550 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAAE244C4FAC007D3550 /* ContentView.swift */; };
 		8BC1DAB1244C4FB0007D3550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC1DAB0244C4FB0007D3550 /* Assets.xcassets */; };
 		8BC1DAB4244C4FB0007D3550 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC1DAB3244C4FB0007D3550 /* Preview Assets.xcassets */; };
 		8BC1DAB7244C4FB0007D3550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC1DAB5244C4FB0007D3550 /* LaunchScreen.storyboard */; };
+		8BC1DABF244CA024007D3550 /* AddWhistleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DABE244CA024007D3550 /* AddWhistleView.swift */; };
+		8BC1DAC1244CB3BD007D3550 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAC0244CB3BD007D3550 /* Helper.swift */; };
+		8BC1DAC3244CE35E007D3550 /* GenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAC2244CE35E007D3550 /* GenreView.swift */; };
+		8BC1DAC5244CE7D5007D3550 /* SubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAC4244CE7D5007D3550 /* SubmitView.swift */; };
+		8BC1DAC9244E07F2007D3550 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAC8244E07F2007D3550 /* LoadingView.swift */; };
+		8BC1DACB244E0917007D3550 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DACA244E0917007D3550 /* Modifier.swift */; };
+		8BC1DACF244E0DEB007D3550 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC1DACE244E0DEB007D3550 /* CloudKit.framework */; };
+		8BC1DAD1244E0FC3007D3550 /* Whistle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAD0244E0FC3007D3550 /* Whistle.swift */; };
+		8BC1DAD3244F74D8007D3550 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAD2244F74D8007D3550 /* Spinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BB599922452170E007C4B72 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		8BBD9A812450C76C00C550EA /* ResizableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableTextField.swift; sourceTree = "<group>"; };
 		8BC1DAA7244C4FAC007D3550 /* The Whistle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Whistle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC1DAAA244C4FAC007D3550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BC1DAAC244C4FAC007D3550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,16 @@
 		8BC1DAB3244C4FB0007D3550 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8BC1DAB6244C4FB0007D3550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BC1DAB8244C4FB0007D3550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC1DABE244CA024007D3550 /* AddWhistleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWhistleView.swift; sourceTree = "<group>"; };
+		8BC1DAC0244CB3BD007D3550 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		8BC1DAC2244CE35E007D3550 /* GenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreView.swift; sourceTree = "<group>"; };
+		8BC1DAC4244CE7D5007D3550 /* SubmitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitView.swift; sourceTree = "<group>"; };
+		8BC1DAC8244E07F2007D3550 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8BC1DACA244E0917007D3550 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		8BC1DACC244E0DD8007D3550 /* The Whistle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "The Whistle.entitlements"; sourceTree = "<group>"; };
+		8BC1DACE244E0DEB007D3550 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8BC1DAD0244E0FC3007D3550 /* Whistle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whistle.swift; sourceTree = "<group>"; };
+		8BC1DAD2244F74D8007D3550 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC1DACF244E0DEB007D3550 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +66,7 @@
 			children = (
 				8BC1DAA9244C4FAC007D3550 /* The Whistle */,
 				8BC1DAA8244C4FAC007D3550 /* Products */,
+				8BC1DACD244E0DEB007D3550 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +81,20 @@
 		8BC1DAA9244C4FAC007D3550 /* The Whistle */ = {
 			isa = PBXGroup;
 			children = (
+				8BC1DACC244E0DD8007D3550 /* The Whistle.entitlements */,
 				8BC1DAAA244C4FAC007D3550 /* AppDelegate.swift */,
 				8BC1DAAC244C4FAC007D3550 /* SceneDelegate.swift */,
 				8BC1DAAE244C4FAC007D3550 /* ContentView.swift */,
+				8BB599922452170E007C4B72 /* ResultsView.swift */,
+				8BC1DABE244CA024007D3550 /* AddWhistleView.swift */,
+				8BC1DAC2244CE35E007D3550 /* GenreView.swift */,
+				8BC1DAC4244CE7D5007D3550 /* SubmitView.swift */,
+				8BC1DAC8244E07F2007D3550 /* LoadingView.swift */,
+				8BC1DAD0244E0FC3007D3550 /* Whistle.swift */,
+				8BBD9A812450C76C00C550EA /* ResizableTextField.swift */,
+				8BC1DAC0244CB3BD007D3550 /* Helper.swift */,
+				8BC1DAD2244F74D8007D3550 /* Spinner.swift */,
+				8BC1DACA244E0917007D3550 /* Modifier.swift */,
 				8BC1DAB0244C4FB0007D3550 /* Assets.xcassets */,
 				8BC1DAB5244C4FB0007D3550 /* LaunchScreen.storyboard */,
 				8BC1DAB8244C4FB0007D3550 /* Info.plist */,
@@ -73,6 +109,14 @@
 				8BC1DAB3244C4FB0007D3550 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BC1DACD244E0DEB007D3550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BC1DACE244E0DEB007D3550 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +190,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC1DAC3244CE35E007D3550 /* GenreView.swift in Sources */,
+				8BC1DAD3244F74D8007D3550 /* Spinner.swift in Sources */,
+				8BB599932452170E007C4B72 /* ResultsView.swift in Sources */,
+				8BC1DAD1244E0FC3007D3550 /* Whistle.swift in Sources */,
+				8BBD9A822450C76C00C550EA /* ResizableTextField.swift in Sources */,
 				8BC1DAAB244C4FAC007D3550 /* AppDelegate.swift in Sources */,
 				8BC1DAAD244C4FAC007D3550 /* SceneDelegate.swift in Sources */,
+				8BC1DAC1244CB3BD007D3550 /* Helper.swift in Sources */,
+				8BC1DACB244E0917007D3550 /* Modifier.swift in Sources */,
 				8BC1DAAF244C4FAC007D3550 /* ContentView.swift in Sources */,
+				8BC1DAC5244CE7D5007D3550 /* SubmitView.swift in Sources */,
+				8BC1DABF244CA024007D3550 /* AddWhistleView.swift in Sources */,
+				8BC1DAC9244E07F2007D3550 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Whistle/The Whistle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"The Whistle/Preview Content\"";
 				DEVELOPMENT_TEAM = 5SYZQ266RF;
@@ -304,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Whistle/The Whistle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"The Whistle/Preview Content\"";
 				DEVELOPMENT_TEAM = 5SYZQ266RF;

@@ -7,10 +7,71 @@
 //
 
 import SwiftUI
+import CloudKit
 
 struct ContentView: View {
+    @State private var showingAddWhistleView = false
+    @ObservedObject var whistles = Whistles()
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+                List {
+                    ForEach(whistles.list, id: \.id) { whistle in
+                        NavigationLink(destination: ResultsView(whistle: whistle)) {
+                            VStack(alignment: .leading) {
+                                Text(whistle.genre ?? "")
+                                    .font(.headline)
+                                    .foregroundColor(.purple)
+                                Text(whistle.comments ?? "")
+                                    .font(.subheadline)
+                            }
+                        }
+                    }
+            }
+            .onAppear(perform: loadWhistles)
+            .sheet(isPresented: $showingAddWhistleView, content: {
+                AddWhistleView()
+            })
+            .navigationBarTitle("What's that Whistle?", displayMode: .inline)
+            .navigationBarItems(leading: Button("Genre") {
+                    //MARK: - Genre action
+                }, trailing: NavigationLink(destination: AddWhistleView(), label: {
+                    Image(systemName: "plus")
+                }))
+        }
+    }
+    
+    func loadWhistles() {
+        let predicate = NSPredicate(value: true)
+        let sort = NSSortDescriptor(key: "creationDate", ascending: false)
+        let query = CKQuery(recordType: "Whistles", predicate: predicate)
+        query.sortDescriptors = [sort]
+        
+        let operation = CKQueryOperation(query: query)
+        operation.desiredKeys = ["genre", "comments"]
+        operation.resultsLimit = 50
+        
+        var newWhistles = [Whistle]()
+        
+        operation.recordFetchedBlock = { record in
+            var whistle = Whistle()
+            whistle.recordID = record.recordID
+            whistle.genre = record["genre"]
+            whistle.comments = record["comments"]
+            newWhistles.append(whistle)
+        }
+        
+        operation.queryCompletionBlock = { (cursor, error) in
+            DispatchQueue.main.async {
+                if error == nil {
+                    self.whistles.list = newWhistles
+                } else {
+                    print(error?.localizedDescription ?? "Unknown Error")
+                }
+            }
+        }
+        
+        CKContainer.default().publicCloudDatabase.add(operation)
     }
 }
 
