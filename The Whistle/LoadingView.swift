@@ -37,7 +37,6 @@ struct LoadingView: View {
                     Button("Done!") {
                         //MARK:- TODO: Return to Content View
                     }
-                    .buttonStyle(colour: .gray)
                     .font(.largeTitle)
                 }
             }

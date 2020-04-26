@@ -12,6 +12,7 @@ import CloudKit
 struct ContentView: View {
     @State private var showingAddWhistleView = false
     @ObservedObject var whistles = Whistles()
+    @State private var myGenres = [String]()
     
     var body: some View {
         NavigationView {
@@ -33,9 +34,9 @@ struct ContentView: View {
                 AddWhistleView()
             })
             .navigationBarTitle("What's that Whistle?", displayMode: .inline)
-            .navigationBarItems(leading: Button("Genre") {
-                    //MARK: - Genre action
-                }, trailing: NavigationLink(destination: AddWhistleView(), label: {
+                    .navigationBarItems(leading: NavigationLink(destination: MyGenresView(myGenres: myGenres)){
+                            Text("Genres")
+                        }, trailing: NavigationLink(destination: AddWhistleView(), label: {
                     Image(systemName: "plus")
                 }))
         }
@@ -72,6 +73,13 @@ struct ContentView: View {
         }
         
         CKContainer.default().publicCloudDatabase.add(operation)
+        
+        let defaults = UserDefaults.standard
+        if let savedGenres = defaults.object(forKey: "myGenres") as? [String] {
+            self.myGenres = savedGenres
+        } else {
+            self.myGenres = [String]()
+        }
     }
 }
 

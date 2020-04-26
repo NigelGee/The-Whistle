@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8BB599932452170E007C4B72 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB599922452170E007C4B72 /* ResultsView.swift */; };
+		8BB59995245498A3007C4B72 /* MyGenresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB59994245498A3007C4B72 /* MyGenresView.swift */; };
+		8BB5999724549EB6007C4B72 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB5999624549EB6007C4B72 /* Genres.swift */; };
 		8BBD9A822450C76C00C550EA /* ResizableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD9A812450C76C00C550EA /* ResizableTextField.swift */; };
 		8BC1DAAB244C4FAC007D3550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAAA244C4FAC007D3550 /* AppDelegate.swift */; };
 		8BC1DAAD244C4FAC007D3550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1DAAC244C4FAC007D3550 /* SceneDelegate.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		8BB599922452170E007C4B72 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		8BB59994245498A3007C4B72 /* MyGenresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGenresView.swift; sourceTree = "<group>"; };
+		8BB5999624549EB6007C4B72 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 		8BBD9A812450C76C00C550EA /* ResizableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableTextField.swift; sourceTree = "<group>"; };
 		8BC1DAA7244C4FAC007D3550 /* The Whistle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Whistle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC1DAAA244C4FAC007D3550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,8 +92,10 @@
 				8BB599922452170E007C4B72 /* ResultsView.swift */,
 				8BC1DABE244CA024007D3550 /* AddWhistleView.swift */,
 				8BC1DAC2244CE35E007D3550 /* GenreView.swift */,
+				8BB59994245498A3007C4B72 /* MyGenresView.swift */,
 				8BC1DAC4244CE7D5007D3550 /* SubmitView.swift */,
 				8BC1DAC8244E07F2007D3550 /* LoadingView.swift */,
+				8BB5999624549EB6007C4B72 /* Genres.swift */,
 				8BC1DAD0244E0FC3007D3550 /* Whistle.swift */,
 				8BBD9A812450C76C00C550EA /* ResizableTextField.swift */,
 				8BC1DAC0244CB3BD007D3550 /* Helper.swift */,
@@ -192,6 +198,8 @@
 			files = (
 				8BC1DAC3244CE35E007D3550 /* GenreView.swift in Sources */,
 				8BC1DAD3244F74D8007D3550 /* Spinner.swift in Sources */,
+				8BB59995245498A3007C4B72 /* MyGenresView.swift in Sources */,
+				8BB5999724549EB6007C4B72 /* Genres.swift in Sources */,
 				8BB599932452170E007C4B72 /* ResultsView.swift in Sources */,
 				8BC1DAD1244E0FC3007D3550 /* Whistle.swift in Sources */,
 				8BBD9A822450C76C00C550EA /* ResizableTextField.swift in Sources */,
