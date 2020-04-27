@@ -15,13 +15,14 @@ enum recordingState {
 
 struct AddWhistleView: View {
     @Environment(\.presentationMode) var presentationMode
-    @State private var showingAlert = false
+    
     @State private var showingState: recordingState = .record
     @State private var whistleRecorder: AVAudioRecorder!
     @State private var whistlePlayer: AVAudioPlayer!
+    @State private var nextDisabled = true
+    @State private var showingAlert = false
     @State private var message = ""
     @State private var title = ""
-    @State private var nextDisabled = true
     
     var body: some View {
         VStack {

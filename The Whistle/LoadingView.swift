@@ -35,7 +35,7 @@ struct LoadingView: View {
                     Color.green
                         .edgesIgnoringSafeArea(.all)
                     Button("Done!") {
-                        //MARK:- TODO: Return to Content View
+                        //MARK:- TODO: Return to Content View (popToRootController)
                     }
                     .font(.largeTitle)
                 }
@@ -63,7 +63,6 @@ struct LoadingView: View {
                 }
             }
         }
-        
     }
 }
 

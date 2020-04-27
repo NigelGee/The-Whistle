@@ -42,8 +42,9 @@ struct ResultsView: View {
         }
     .onAppear(perform: fetch)
         .navigationBarTitle("Genre: \(whistle.genre!)")
-        .navigationBarItems(leading: EmptyView()
-            ,trailing: Button(action: {
+        .navigationBarItems(
+            leading: EmptyView(),
+            trailing: Button(action: {
                 if self.downloadStatus == . download {
                     self.fetchWhistle()
                 } else if self.downloadStatus == .listen {
@@ -57,7 +58,7 @@ struct ResultsView: View {
                 } else if downloadStatus == .listen {
                     Text("Listen")
                 }
-        })
+            })
     }
     
     func add() {

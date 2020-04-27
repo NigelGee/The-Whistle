@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+// MARK: NOT USED
 struct Buttons: ViewModifier {
     var colour: Color
     
@@ -22,7 +22,7 @@ struct Buttons: ViewModifier {
 }
 
 extension View {
-    func buttonStyle(colour: Color) -> some View {
+    func styleButton(colour: Color) -> some View {
         self.modifier(Buttons(colour: colour))
     }
 }

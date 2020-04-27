@@ -10,39 +10,41 @@ import SwiftUI
 import CloudKit
 
 struct ContentView: View {
-    @State private var showingAddWhistleView = false
     @ObservedObject var whistles = Whistles()
+    
     @State private var myGenres = [String]()
+    @State private var showingAddWhistleView = false
+    
     
     var body: some View {
         NavigationView {
-                List {
-                    ForEach(whistles.list, id: \.id) { whistle in
-                        NavigationLink(destination: ResultsView(whistle: whistle)) {
-                            VStack(alignment: .leading) {
-                                Text(whistle.genre ?? "")
-                                    .font(.headline)
-                                    .foregroundColor(.purple)
-                                Text(whistle.comments ?? "")
-                                    .font(.subheadline)
-                            }
+            List {
+                ForEach(whistles.list, id: \.id) { whistle in
+                    NavigationLink(destination: ResultsView(whistle: whistle)) {
+                        VStack(alignment: .leading) {
+                            Text(whistle.genre ?? "")
+                                .font(.headline)
+                                .foregroundColor(.purple)
+                            Text(whistle.comments ?? "")
+                                .font(.subheadline)
                         }
                     }
+                }
             }
             .onAppear(perform: loadWhistles)
             .sheet(isPresented: $showingAddWhistleView, content: {
                 AddWhistleView()
             })
             .navigationBarTitle("What's that Whistle?", displayMode: .inline)
-                    .navigationBarItems(
-                        leading:
-                        NavigationLink(destination: MyGenresView(myGenres: myGenres)) {
-                            Text("Genres")
-                        },
-                        trailing:
-                        NavigationLink(destination: AddWhistleView()) {
-                            Image(systemName: "plus")
-                        })
+            .navigationBarItems(
+                leading:
+                NavigationLink(destination: MyGenresView(myGenres: myGenres)) {
+                    Text("Genres")
+                },
+                trailing:
+                NavigationLink(destination: AddWhistleView()) {
+                    Image(systemName: "plus")
+            })
         }
     }
     
