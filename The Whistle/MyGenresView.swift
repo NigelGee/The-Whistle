@@ -34,7 +34,6 @@ struct MyGenresView: View {
                             }
                         }
                     }
-                    print(self.myGenres)
                 }
             }
         }
@@ -61,7 +60,7 @@ struct MyGenresView: View {
                             }
                         }
                     }
-                    print("Genre")
+                    
                     for genre in self.myGenres {
                         let predicate = NSPredicate(format: "genre = %@", genre)
                         let subscription = CKQuerySubscription(recordType: "Whistles", predicate: predicate, options: .firesOnRecordCreation)

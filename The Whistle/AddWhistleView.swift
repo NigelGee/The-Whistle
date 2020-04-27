@@ -122,7 +122,6 @@ struct AddWhistleView: View {
         whistleRecorder = nil
         
         let audioURL = Helper.getWhistleURL()
-        print(audioURL.absoluteURL)
         
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),

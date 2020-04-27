@@ -34,11 +34,15 @@ struct ContentView: View {
                 AddWhistleView()
             })
             .navigationBarTitle("What's that Whistle?", displayMode: .inline)
-                    .navigationBarItems(leading: NavigationLink(destination: MyGenresView(myGenres: myGenres)){
+                    .navigationBarItems(
+                        leading:
+                        NavigationLink(destination: MyGenresView(myGenres: myGenres)) {
                             Text("Genres")
-                        }, trailing: NavigationLink(destination: AddWhistleView(), label: {
-                    Image(systemName: "plus")
-                }))
+                        },
+                        trailing:
+                        NavigationLink(destination: AddWhistleView()) {
+                            Image(systemName: "plus")
+                        })
         }
     }
     
